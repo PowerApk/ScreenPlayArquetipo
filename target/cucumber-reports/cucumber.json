@@ -1,0 +1,215 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Open Browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7774152161,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is in NewTours Home Page",
+            "match": {
+              "location": "NewToursLoginStepsDef.userIsInNewToursHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 81201448,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewToursLoginStepsDef.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User Log in",
+        "description": "",
+        "id": "newtours-login;user-log-in;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2335929706,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User type User\"alejo2265\" and Pass\"qwe123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alejo2265",
+                  "offset": 15
+                },
+                {
+                  "val": "qwe123",
+                  "offset": 35
+                }
+              ],
+              "location": "NewToursLoginStepsDef.userTypeUserAndPass(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5628028672,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click log-in button",
+            "match": {
+              "location": "NewToursLoginStepsDef.userClickLogInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 961283216,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User successful login",
+            "match": {
+              "location": "NewToursLoginStepsDef.userSuccessfulLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NewTours"
+          },
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Open Browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4416315580,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is in NewTours Home Page",
+            "match": {
+              "location": "NewToursLoginStepsDef.userIsInNewToursHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4973498,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewToursLoginStepsDef.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User Log in",
+        "description": "",
+        "id": "newtours-login;user-log-in;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2151128326,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User type User\"alejooo\" and Pass\"adw1w23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alejooo",
+                  "offset": 15
+                },
+                {
+                  "val": "adw1w23",
+                  "offset": 33
+                }
+              ],
+              "location": "NewToursLoginStepsDef.userTypeUserAndPass(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5936254502,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click log-in button",
+            "match": {
+              "location": "NewToursLoginStepsDef.userClickLogInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Missing Button - Expected net.serenitybdd.screenplay.QuestionSubject@3ae0b770\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:187)\r\n\tat com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:60)\r\n\tat ✽.User successful login(src/test/resources/features/newTours_login.feature:15)\r\n",
+              "duration": 2841701410,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User successful login",
+            "match": {
+              "location": "NewToursLoginStepsDef.userSuccessfulLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NewTours"
+          },
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "NewTours Login",
+    "description": "  As a traveler user\n  I want to use NewTours Page\n  to succesfull autentication in home page",
+    "id": "newtours-login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/newTours_login.feature",
+    "tags": [
+      {
+        "name": "@NewTours",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
