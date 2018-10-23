@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="NewTours Login" skipped="0" tests="2" time="120.91" timestamp="2018-10-23 08:18:04"><testcase name="User Log in"><failure message="Missing Button - Expected button&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Missing Button - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Missing Button - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:62)&#13;
+✽.User successful login(src/test/resources/features/newTours_login.feature:15)&#13;
+</system-err></testcase></testsuite>

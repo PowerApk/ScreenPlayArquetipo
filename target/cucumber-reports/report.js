@@ -176,7 +176,7 @@ formatter.match({
   "location": "NewToursLoginStepsDef.userSuccessfulLogin()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: Missing Button - Expected net.serenitybdd.screenplay.QuestionSubject@3ae0b770\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:187)\r\n\tat com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:60)\r\n\tat ✽.User successful login(src/test/resources/features/newTours_login.feature:15)\r\n",
+  "error_message": "java.lang.AssertionError: Missing Button - Expected button\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:244)\r\n\tat com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:62)\r\n\tat ✽.User successful login(src/test/resources/features/newTours_login.feature:15)\r\n",
   "status": "failed"
 });
 });

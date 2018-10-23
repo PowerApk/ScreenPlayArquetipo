@@ -18,6 +18,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.exceptions.ActorCannotBrowseTheWebException;
 import net.thucydides.core.annotations.Managed;
 
 public class NewToursLoginStepsDef {
@@ -37,21 +38,20 @@ public class NewToursLoginStepsDef {
 	}
 	
 	@Given("^User is in NewTours Home Page$")
-	public void userIsInNewToursHomePage() throws Exception {
+	public void userIsInNewToursHomePage() throws ActorCannotBrowseTheWebException {
 		//Background
 		alejo.wasAbleTo(OpenTheBrowser.on(newtoursHomePage));
-		//alejo.should(consequences);
 	}
 
 	//Ingresando informacion de usuario
 	@When("^User type User\"([^\"]*)\" and Pass\"([^\"]*)\"$")
-	public void userTypeUserAndPass(String user, String pass) throws Exception {
+	public void userTypeUserAndPass(String user, String pass) throws ActorCannotBrowseTheWebException,Exception,NoMatchingButton {
 	    alejo.attemptsTo(Entry.credentials(user, pass));
 	}
 
 	//Validando la info
 	@And("^User click log-in button$")
-	public void userClickLogInButton() throws Exception {
+	public void userClickLogInButton() throws ActorCannotBrowseTheWebException,Exception,NoMatchingButton {
 	    alejo.attemptsTo(Submit.button());
 	}
 

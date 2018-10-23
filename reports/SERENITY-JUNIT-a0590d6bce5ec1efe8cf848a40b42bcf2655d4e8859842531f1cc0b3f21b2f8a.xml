@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="NewTours Login" skipped="0" tests="2" time="36.64" timestamp="2018-10-22 11:44:36"><testcase name="User Log in"><failure message="Missing Button - Expected net.serenitybdd.screenplay.QuestionSubject@3ae0b770&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Missing Button - Expected net.serenitybdd.screenplay.QuestionSubject@3ae0b770
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="NewTours Login" skipped="0" tests="2" time="98.09" timestamp="2018-10-23 07:59:20"><testcase name="User Log in"><failure message="Missing Button - Expected net.serenitybdd.screenplay.QuestionSubject@3ae0b770&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Missing Button - Expected net.serenitybdd.screenplay.QuestionSubject@3ae0b770
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;</failure><system-err>Missing Button - Expected net.serenitybdd.screenplay.QuestionSubject@3ae0b770
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;&#13;
-com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:60)&#13;
+com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:62)&#13;
 ✽.User successful login(src/test/resources/features/newTours_login.feature:15)&#13;
 </system-err></testcase></testsuite>

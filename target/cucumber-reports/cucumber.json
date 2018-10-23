@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7774152161,
+              "duration": 6893312964,
               "status": "passed"
             },
             "line": 9,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 81201448,
+              "duration": 142311053,
               "status": "passed"
             },
             "match": {
@@ -44,7 +44,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2335929706,
+              "duration": 3172440888,
               "status": "passed"
             },
             "line": 13,
@@ -66,7 +66,7 @@
           },
           {
             "result": {
-              "duration": 5628028672,
+              "duration": 92238568168,
               "status": "passed"
             },
             "line": 14,
@@ -78,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 961283216,
+              "duration": 1227251308,
               "status": "passed"
             },
             "line": 15,
@@ -107,7 +107,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4416315580,
+              "duration": 4785999899,
               "status": "passed"
             },
             "line": 9,
@@ -123,7 +123,7 @@
         "before": [
           {
             "result": {
-              "duration": 4973498,
+              "duration": 5613876,
               "status": "passed"
             },
             "match": {
@@ -140,7 +140,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2151128326,
+              "duration": 3011316860,
               "status": "passed"
             },
             "line": 13,
@@ -162,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 5936254502,
+              "duration": 3148396149,
               "status": "passed"
             },
             "line": 14,
@@ -174,8 +174,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Missing Button - Expected net.serenitybdd.screenplay.QuestionSubject@3ae0b770\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:187)\r\n\tat com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:60)\r\n\tat ✽.User successful login(src/test/resources/features/newTours_login.feature:15)\r\n",
-              "duration": 2841701410,
+              "error_message": "java.lang.AssertionError: Missing Button - Expected button\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:244)\r\n\tat com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:62)\r\n\tat ✽.User successful login(src/test/resources/features/newTours_login.feature:15)\r\n",
+              "duration": 3063538584,
               "status": "failed"
             },
             "line": 15,
