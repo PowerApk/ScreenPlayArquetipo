@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m45.35s</div>
+<div class="counter">41.365s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">50%</div>
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -79,14 +79,29 @@
 <a name="User Log in"></a>
 <h3 class="failures">User Log in</h3>
 <span class="code">
-<pre>java.lang.AssertionError: Missing Button - Expected button
+<pre>java.lang.AssertionError: No Aplication Connection - Expected button
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
-	at com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:65)
-	at ✽.User successful login(src/test/resources/features/newTours_login.feature:15)
+	at com.newtours.stepsdefinition.NewToursLoginStepsDef.userIsInNewToursHomePage(NewToursLoginStepsDef.java:45)
+	at ✽.User is in NewTours Home Page(src/test/resources/features/newTours_login.feature:9)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="User Log in"></a>
+<h3 class="failures">User Log in</h3>
+<span class="code">
+<pre>java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursLoginStepsDef.userIsInNewToursHomePage(NewToursLoginStepsDef.java:45)
+	at ✽.User is in NewTours Home Page(src/test/resources/features/newTours_login.feature:9)
 </pre>
 </span>
 </div>
@@ -102,13 +117,13 @@ Expected: is &lt;true&gt;
 </tr>
 </thead>
 <tr>
-<td class="success">User Log in</td>
-<td class="success">41.654s</td>
-<td class="success">passed</td>
+<td class="failures">User Log in</td>
+<td class="failures">30.935s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">User Log in</td>
-<td class="failures">1m3.70s</td>
+<td class="failures">10.430s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -117,22 +132,31 @@ Expected: is &lt;true&gt;
 <h2>Standard output</h2>
 <span class="code">
 <pre>    Given User is in NewTours Home Page # NewToursLoginStepsDef.userIsInNewToursHomePage()
+      java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursLoginStepsDef.userIsInNewToursHomePage(NewToursLoginStepsDef.java:45)
+	at ?.User is in NewTours Home Page(src/test/resources/features/newTours_login.feature:9)
+
 
   @NewTours @Login
   Scenario Outline: User Log in                     # src/test/resources/features/newTours_login.feature:19
     When User type User&quot;alejo2265&quot; and Pass&quot;qwe123&quot; # NewToursLoginStepsDef.userTypeUserAndPass(String,String)
     And User click log-in button                    # NewToursLoginStepsDef.userClickLogInButton()
     Then User successful login                      # NewToursLoginStepsDef.userSuccessfulLogin()
-      java.lang.AssertionError: Missing Button - Expected button
+    Given User is in NewTours Home Page # NewToursLoginStepsDef.userIsInNewToursHomePage()
+      java.lang.AssertionError: No Aplication Connection - Expected button
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
-	at com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:65)
-	at ?.User successful login(src/test/resources/features/newTours_login.feature:15)
+	at com.newtours.stepsdefinition.NewToursLoginStepsDef.userIsInNewToursHomePage(NewToursLoginStepsDef.java:45)
+	at ?.User is in NewTours Home Page(src/test/resources/features/newTours_login.feature:9)
 
-    Given User is in NewTours Home Page # NewToursLoginStepsDef.userIsInNewToursHomePage()
 
   @NewTours @Login
   Scenario Outline: User Log in                    # src/test/resources/features/newTours_login.feature:20
@@ -145,9 +169,9 @@ Expected: is &lt;true&gt;
 <div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 36183
+<pre>Starting ChromeDriver 2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5) on port 11883
 Only local connections are allowed.
-oct 24, 2018 12:33:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+oct 24, 2018 9:38:20 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
@@ -160,21 +184,9 @@ INFORMACIÓN: Detected dialect: OSS
 TEST FAILED: User Log in
 --------------------------------------------------------------------------
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then button
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Missing Button - Expected buttonExpected: is &lt;true&gt; but: was &lt;false&gt;
-oct 24, 2018 12:34:47 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - No Aplication Connection - Expected buttonExpected: is &lt;true&gt; but: was &lt;false&gt;
+oct 24, 2018 9:38:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED: User Log in
---------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then button
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Missing Button - Expected buttonExpected: is &lt;true&gt; but: was &lt;false&gt;
 </pre>
 </span>
 </div>
@@ -186,7 +198,7 @@ TEST FAILED: User Log in
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.2</a> at 24-oct-2018 0:38:15</p>
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 24-oct-2018 9:39:13</p>
 </div>
 </div>
 </body>

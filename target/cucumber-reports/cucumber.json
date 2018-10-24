@@ -11,8 +11,9 @@
         "steps": [
           {
             "result": {
-              "duration": 5288358270,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: No Aplication Connection - Expected button\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:244)\r\n\tat com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)\r\n\tat ✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)\r\n",
+              "duration": 6877036578,
+              "status": "failed"
             },
             "line": 9,
             "name": "User is in NewTours Register Page",
@@ -27,20 +28,20 @@
         "before": [
           {
             "result": {
-              "duration": 2608330,
-              "status": "passed"
-            },
-            "match": {
-              "location": "NewToursRegisterStepsDef.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 3816589,
+              "duration": 4131114,
               "status": "passed"
             },
             "match": {
               "location": "NewToursLoginStepsDef.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3856613,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewToursRegisterStepsDef.setup()"
             }
           }
         ],
@@ -48,24 +49,12 @@
         "name": "NewTours Register",
         "description": "",
         "id": "newtours-register;newtours-register;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 46820,
-              "status": "passed"
-            },
-            "match": {
-              "location": "NewToursRegisterStepsDef.cucumberIterator()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 13051062928,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "User fill the form info 0",
@@ -135,8 +124,7 @@
           },
           {
             "result": {
-              "duration": 69205516232,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "User sumbit on register button",
@@ -147,8 +135,7 @@
           },
           {
             "result": {
-              "duration": 946207916,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "User successful registered",
@@ -176,8 +163,9 @@
         "steps": [
           {
             "result": {
-              "duration": 7779876290,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: No Aplication Connection - Expected button\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:244)\r\n\tat com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)\r\n\tat ✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)\r\n",
+              "duration": 6979670659,
+              "status": "failed"
             },
             "line": 9,
             "name": "User is in NewTours Register Page",
@@ -192,20 +180,20 @@
         "before": [
           {
             "result": {
-              "duration": 3227563,
-              "status": "passed"
-            },
-            "match": {
-              "location": "NewToursRegisterStepsDef.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 2202430,
+              "duration": 7254087,
               "status": "passed"
             },
             "match": {
               "location": "NewToursLoginStepsDef.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4626123,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewToursRegisterStepsDef.setup()"
             }
           }
         ],
@@ -213,24 +201,12 @@
         "name": "NewTours Register",
         "description": "",
         "id": "newtours-register;newtours-register;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 47198,
-              "status": "passed"
-            },
-            "match": {
-              "location": "NewToursRegisterStepsDef.cucumberIterator()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 13721960642,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "User fill the form info 1",
@@ -300,8 +276,7 @@
           },
           {
             "result": {
-              "duration": 50773261824,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "User sumbit on register button",
@@ -312,8 +287,7 @@
           },
           {
             "result": {
-              "duration": 1066100849,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "User successful registered",

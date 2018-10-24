@@ -19,8 +19,6 @@ public class Entry implements Task {
 		this.password = password;
 		
 				}
-	
-	
 
 	@Override
 	@Step("{0} Enter the credentials in to NewTours login fields")

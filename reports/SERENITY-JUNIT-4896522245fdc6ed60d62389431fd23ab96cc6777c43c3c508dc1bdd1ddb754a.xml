@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="NewTours Login" skipped="0" tests="2" time="77.65" timestamp="2018-10-24 12:33:41"><testcase name="User Log in"><failure message="Missing Button - Expected button&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Missing Button - Expected button
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="NewTours Login" skipped="0" tests="2" time="10.69" timestamp="2018-10-24 09:38:14"><testcase name="User Log in"><failure message="No Aplication Connection - Expected button&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">No Aplication Connection - Expected button
 Expected: is &lt;true&gt;
-     but: was &lt;false&gt;</failure><system-err>Missing Button - Expected button
+     but: was &lt;false&gt;</failure><system-err>No Aplication Connection - Expected button
 Expected: is &lt;true&gt;
      but: was &lt;false&gt;&#13;
-com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:65)&#13;
-✽.User successful login(src/test/resources/features/newTours_login.feature:15)&#13;
+com.newtours.stepsdefinition.NewToursLoginStepsDef.userIsInNewToursHomePage(NewToursLoginStepsDef.java:45)&#13;
+✽.User is in NewTours Home Page(src/test/resources/features/newTours_login.feature:9)&#13;
 </system-err></testcase></testsuite>

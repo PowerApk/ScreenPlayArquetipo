@@ -19,9 +19,31 @@ Feature: NewTours Register
 
   Background: Open Browser                  # src/test/resources/features/newTours_register.feature:8
 
-2 Scenarios (2 passed)
-8 Steps (8 passed)
-2m46,327s
+Failed scenarios:
+src/test/resources/features/newTours_register.feature:22 # NewTours Register
+src/test/resources/features/newTours_register.feature:23 # NewTours Register
+
+2 Scenarios (2 failed)
+8 Steps (2 failed, 6 skipped)
+0m14,655s
+
+java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ?.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+
+java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ?.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: NewTours Register

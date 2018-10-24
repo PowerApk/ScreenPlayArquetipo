@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2m46.30s</div>
+<div class="counter">14.603s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,16 +61,52 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
 </li>
 <li>
-<a href="#tab2">Standard error</a>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="NewTours Register"></a>
+<h3 class="failures">NewTours Register</h3>
+<span class="code">
+<pre>java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="NewTours Register"></a>
+<h3 class="failures">NewTours Register</h3>
+<span class="code">
+<pre>java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -81,30 +117,46 @@
 </tr>
 </thead>
 <tr>
-<td class="success">NewTours Register</td>
-<td class="success">1m30.23s</td>
-<td class="success">passed</td>
+<td class="failures">NewTours Register</td>
+<td class="failures">7.484s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">NewTours Register</td>
-<td class="success">1m16.08s</td>
-<td class="success">passed</td>
+<td class="failures">NewTours Register</td>
+<td class="failures">7.119s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>actualmente en: 0
-    Given User is in NewTours Register Page # NewToursRegisterStepsDef.userIsInNewToursRegisterPage()
+<pre>    Given User is in NewTours Register Page # NewToursRegisterStepsDef.userIsInNewToursRegisterPage()
+      java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ?.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+
 
   @NewTours @Register
   Scenario Outline: NewTours Register  # src/test/resources/features/newTours_register.feature:22
     When User fill the form info 0     # NewToursRegisterStepsDef.userFillTheFormInfo(int,RegisterData&gt;)
     And User sumbit on register button # NewToursRegisterStepsDef.userSumbitOnRegisterButton()
     Then User successful registered    # NewToursRegisterStepsDef.userSuccessfulRegistered()
-actualmente en: 0
     Given User is in NewTours Register Page # NewToursRegisterStepsDef.userIsInNewToursRegisterPage()
+      java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ?.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+
 
   @NewTours @Register
   Scenario Outline: NewTours Register  # src/test/resources/features/newTours_register.feature:23
@@ -114,33 +166,25 @@ actualmente en: 0
 </pre>
 </span>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>oct 24, 2018 12:35:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+<pre>oct 24, 2018 9:38:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: NewTours Register
-----------------------------------------------------------------------------
-oct 24, 2018 12:37:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+TEST FAILED: NewTours Register
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then button
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - No Aplication Connection - Expected buttonExpected: is &lt;true&gt; but: was &lt;false&gt;
+oct 24, 2018 9:39:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
-
-TEST PASSED: NewTours Register
-----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -152,7 +196,7 @@ TEST PASSED: NewTours Register
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.2</a> at 24-oct-2018 0:38:15</p>
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 24-oct-2018 9:39:13</p>
 </div>
 </div>
 </body>

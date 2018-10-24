@@ -32,7 +32,7 @@ public class NewToursRegisterStepsDef {
 	
 	private Actor alejo = Actor.named("Alejo");
 	private NewToursRegisterPage newtoursRegisterPage;
-	private int filaActual = 0;
+	//private int filaActual = 0;
 	//private List<RegisterData> fromData;
 	
 	//esto es un tipo de constructor en el cual estoy pasando el data
@@ -54,14 +54,14 @@ public class NewToursRegisterStepsDef {
 	
 	//aca lo que hago es que cuando finalice el test me muevo
 	//a la proxima columna de la tabla de datos de ccucumber
-	@After
-	public void cucumberIterator() {
-		filaActual++;//por ahora no funciono, talvez sirva mas adelnte
-	}
+	//@After
+	//public void cucumberIterator() {
+		//filaActual++;//por ahora no funciono, talvez sirva mas adelnte
+	//}
 	
 	@Given("^User is in NewTours Register Page$")
 	public void userIsInNewToursRegisterPage() {
-		System.out.println("actualmente en: "+filaActual);
+		//System.out.println("actualmente en: "+filaActual);
 		//Background
 				alejo.wasAbleTo(OpenTheBrowser.on(newtoursRegisterPage));
 				alejo.should(

@@ -125,7 +125,8 @@ formatter.match({
   "location": "NewToursRegisterStepsDef.userIsInNewToursRegisterPage()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: No Aplication Connection - Expected button\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:244)\r\n\tat com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)\r\n\tat ✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "name": "NewTours Register",
@@ -201,7 +202,7 @@ formatter.match({
   "location": "NewToursRegisterStepsDef.userFillTheFormInfo(int,RegisterData\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User sumbit on register button",
@@ -211,7 +212,7 @@ formatter.match({
   "location": "NewToursRegisterStepsDef.userSumbitOnRegisterButton()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User successful registered",
@@ -221,10 +222,7 @@ formatter.match({
   "location": "NewToursRegisterStepsDef.userSuccessfulRegistered()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "name": "Open Browser",
@@ -245,7 +243,8 @@ formatter.match({
   "location": "NewToursRegisterStepsDef.userIsInNewToursRegisterPage()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: No Aplication Connection - Expected button\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:244)\r\n\tat com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)\r\n\tat ✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "name": "NewTours Register",
@@ -321,7 +320,7 @@ formatter.match({
   "location": "NewToursRegisterStepsDef.userFillTheFormInfo(int,RegisterData\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User sumbit on register button",
@@ -331,7 +330,7 @@ formatter.match({
   "location": "NewToursRegisterStepsDef.userSumbitOnRegisterButton()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "User successful registered",
@@ -341,9 +340,6 @@ formatter.match({
   "location": "NewToursRegisterStepsDef.userSuccessfulRegistered()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

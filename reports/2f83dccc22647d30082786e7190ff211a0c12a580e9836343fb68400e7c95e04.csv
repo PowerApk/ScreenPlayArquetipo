@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"NewTours Login","User Log in","FAILURE","2018-10-24T00:33:41.7-05:00[America/Bogota]","0.0","77.65"
+"NewTours Login","User Log in","FAILURE","2018-10-24T09:38:14.822-05:00[America/Bogota]","0.0","10.69"
+"NewTours Register","NewTours Register","FAILURE","2018-10-24T09:38:57.281-05:00[America/Bogota]","0.0","6.95"

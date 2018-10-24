@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="NewTours Register" skipped="0" tests="2" time="165.16" timestamp="2018-10-24 12:35:27"><testcase name="NewTours Register"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="NewTours Register" skipped="0" tests="2" time="6.95" timestamp="2018-10-24 09:38:57"><testcase name="NewTours Register"><failure message="No Aplication Connection - Expected button&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)&#13;
+✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)&#13;
+</system-err></testcase></testsuite>

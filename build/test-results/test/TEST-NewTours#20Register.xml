@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="NewTours Register" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-24T05:35:27" hostname="RC-PC" time="166.303">
+<testsuite name="NewTours Register" tests="2" skipped="0" failures="2" errors="0" timestamp="2018-10-24T14:38:57" hostname="RC-PC" time="14.607">
   <properties/>
-  <testcase name="NewTours Register" classname="NewTours Register" time="90.225"/>
-  <testcase name="NewTours Register" classname="NewTours Register" time="76.076"/>
-  <system-out><![CDATA[actualmente en: 0
-    Given User is in NewTours Register Page # NewToursRegisterStepsDef.userIsInNewToursRegisterPage()
+  <testcase name="NewTours Register" classname="NewTours Register" time="7.119">
+    <failure message="java.lang.AssertionError: No Aplication Connection - Expected button&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+</failure>
+  </testcase>
+  <testcase name="NewTours Register" classname="NewTours Register" time="7.484">
+    <failure message="java.lang.AssertionError: No Aplication Connection - Expected button&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ✽.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+</failure>
+  </testcase>
+  <system-out><![CDATA[    Given User is in NewTours Register Page # NewToursRegisterStepsDef.userIsInNewToursRegisterPage()
+      java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ?.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+
 
   @NewTours @Register
   Scenario Outline: NewTours Register  # src/test/resources/features/newTours_register.feature:22
     When User fill the form info 0     # NewToursRegisterStepsDef.userFillTheFormInfo(int,RegisterData>)
     And User sumbit on register button # NewToursRegisterStepsDef.userSumbitOnRegisterButton()
     Then User successful registered    # NewToursRegisterStepsDef.userSuccessfulRegistered()
-actualmente en: 0
     Given User is in NewTours Register Page # NewToursRegisterStepsDef.userIsInNewToursRegisterPage()
+      java.lang.AssertionError: No Aplication Connection - Expected button
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:244)
+	at com.newtours.stepsdefinition.NewToursRegisterStepsDef.userIsInNewToursRegisterPage(NewToursRegisterStepsDef.java:67)
+	at ?.User is in NewTours Register Page(src/test/resources/features/newTours_register.feature:9)
+
 
   @NewTours @Register
   Scenario Outline: NewTours Register  # src/test/resources/features/newTours_register.feature:23
@@ -20,29 +56,21 @@ actualmente en: 0
     And User sumbit on register button # NewToursRegisterStepsDef.userSumbitOnRegisterButton()
     Then User successful registered    # NewToursRegisterStepsDef.userSuccessfulRegistered()
 ]]></system-out>
-  <system-err><![CDATA[oct 24, 2018 12:35:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[oct 24, 2018 9:38:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: NewTours Register
-----------------------------------------------------------------------------
-oct 24, 2018 12:37:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+TEST FAILED: NewTours Register
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then button
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - No Aplication Connection - Expected buttonExpected: is <true> but: was <false>
+oct 24, 2018 9:39:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
-
-TEST PASSED: NewTours Register
-----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
