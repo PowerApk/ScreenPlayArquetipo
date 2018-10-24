@@ -9,6 +9,10 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class NewToursHomePage extends PageObject {
 	
 	//Aca mapeo los elementos propios de la pagina
+	
+	public static final Target LOGO = 
+			Target.the("NewTours Logo").
+			locatedBy("//*[@alt='Mercury Tours']");
 
 	public static final Target USER_NAME = 
 			Target.the("NewTours UserName field").

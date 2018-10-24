@@ -5,6 +5,7 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import org.openqa.selenium.WebDriver;
 
 import com.newtours.exceptions.NoMatchingButton;
+import com.newtours.exceptions.NoWebConnection;
 import com.newtours.questions.Button;
 import com.newtours.tasks.Entry;
 import com.newtours.tasks.OpenTheBrowser;
@@ -41,17 +42,20 @@ public class NewToursLoginStepsDef {
 	public void userIsInNewToursHomePage() throws ActorCannotBrowseTheWebException {
 		//Background
 		alejo.wasAbleTo(OpenTheBrowser.on(newtoursHomePage));
+		alejo.should(
+				seeThat(Button.isDisplayed(NewToursHomePage.LOGO)).
+				orComplainWith(NoWebConnection.class,"No Aplication Connection"));
 	}
 
 	//Ingresando informacion de usuario
 	@When("^User type User\"([^\"]*)\" and Pass\"([^\"]*)\"$")
-	public void userTypeUserAndPass(String user, String pass) throws ActorCannotBrowseTheWebException,Exception,NoMatchingButton {
+	public void userTypeUserAndPass(String user, String pass) throws Exception {
 	    alejo.attemptsTo(Entry.credentials(user, pass));
 	}
 
 	//Validando la info
 	@And("^User click log-in button$")
-	public void userClickLogInButton() throws ActorCannotBrowseTheWebException,Exception,NoMatchingButton {
+	public void userClickLogInButton() throws Exception {
 	    alejo.attemptsTo(Submit.button());
 	}
 
@@ -59,7 +63,7 @@ public class NewToursLoginStepsDef {
 	@Then("^User successful login$")
 	public void userSuccessfulLogin() throws Exception {
 	    alejo.should(
-	    		seeThat(Button.isDisplayed()).
+	    		seeThat(Button.isDisplayed(NewToursHomePage.LOGIN)).
 	    		orComplainWith(NoMatchingButton.class,
 	    				"Missing Button"));
 	}

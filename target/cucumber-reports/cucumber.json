@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 6893312964,
+              "duration": 5288358270,
               "status": "passed"
             },
             "line": 9,
-            "name": "User is in NewTours Home Page",
+            "name": "User is in NewTours Register Page",
             "match": {
-              "location": "NewToursLoginStepsDef.userIsInNewToursHomePage()"
+              "location": "NewToursRegisterStepsDef.userIsInNewToursRegisterPage()"
             },
             "keyword": "Given "
           }
@@ -27,7 +27,16 @@
         "before": [
           {
             "result": {
-              "duration": 142311053,
+              "duration": 2608330,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewToursRegisterStepsDef.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3816589,
               "status": "passed"
             },
             "match": {
@@ -35,56 +44,116 @@
             }
           }
         ],
-        "line": 19,
-        "name": "User Log in",
+        "line": 22,
+        "name": "NewTours Register",
         "description": "",
-        "id": "newtours-login;user-log-in;;2",
+        "id": "newtours-register;newtours-register;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 46820,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewToursRegisterStepsDef.cucumberIterator()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3172440888,
+              "duration": 13051062928,
               "status": "passed"
             },
             "line": 13,
-            "name": "User type User\"alejo2265\" and Pass\"qwe123\"",
+            "name": "User fill the form info 0",
             "match": {
               "arguments": [
                 {
-                  "val": "alejo2265",
-                  "offset": 15
-                },
-                {
-                  "val": "qwe123",
-                  "offset": 35
+                  "val": "0",
+                  "offset": 24
                 }
               ],
-              "location": "NewToursLoginStepsDef.userTypeUserAndPass(String,String)"
+              "location": "NewToursRegisterStepsDef.userFillTheFormInfo(int,RegisterData\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "nombre",
+                  "apellido",
+                  "phone",
+                  "email",
+                  "address1",
+                  "address2",
+                  "city",
+                  "state",
+                  "postal_cod",
+                  "country",
+                  "userName",
+                  "pass",
+                  "conf_pass"
+                ]
+              },
+              {
+                "cells": [
+                  "data1",
+                  "data2",
+                  "123123",
+                  "example@test.com",
+                  "Sabaneta",
+                  "Shopos",
+                  "Medellin",
+                  "Antioquia",
+                  "10001",
+                  "42",
+                  "vash2265",
+                  "1234",
+                  "1234"
+                ]
+              },
+              {
+                "cells": [
+                  "data3",
+                  "data4",
+                  "123213",
+                  "badexample@test.com",
+                  "nothing land",
+                  "ningun lugar",
+                  "cualquiera",
+                  "Valle",
+                  "6093",
+                  "43",
+                  "alejo2265",
+                  "fjdb",
+                  "234"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 92238568168,
+              "duration": 69205516232,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User click log-in button",
+            "line": 17,
+            "name": "User sumbit on register button",
             "match": {
-              "location": "NewToursLoginStepsDef.userClickLogInButton()"
+              "location": "NewToursRegisterStepsDef.userSumbitOnRegisterButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1227251308,
+              "duration": 946207916,
               "status": "passed"
             },
-            "line": 15,
-            "name": "User successful login",
+            "line": 18,
+            "name": "User successful registered",
             "match": {
-              "location": "NewToursLoginStepsDef.userSuccessfulLogin()"
+              "location": "NewToursRegisterStepsDef.userSuccessfulRegistered()"
             },
             "keyword": "Then "
           }
@@ -94,7 +163,7 @@
             "name": "@NewTours"
           },
           {
-            "name": "@Login"
+            "name": "@Register"
           }
         ]
       },
@@ -107,13 +176,13 @@
         "steps": [
           {
             "result": {
-              "duration": 4785999899,
+              "duration": 7779876290,
               "status": "passed"
             },
             "line": 9,
-            "name": "User is in NewTours Home Page",
+            "name": "User is in NewTours Register Page",
             "match": {
-              "location": "NewToursLoginStepsDef.userIsInNewToursHomePage()"
+              "location": "NewToursRegisterStepsDef.userIsInNewToursRegisterPage()"
             },
             "keyword": "Given "
           }
@@ -123,7 +192,16 @@
         "before": [
           {
             "result": {
-              "duration": 5613876,
+              "duration": 3227563,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewToursRegisterStepsDef.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2202430,
               "status": "passed"
             },
             "match": {
@@ -131,57 +209,116 @@
             }
           }
         ],
-        "line": 20,
-        "name": "User Log in",
+        "line": 23,
+        "name": "NewTours Register",
         "description": "",
-        "id": "newtours-login;user-log-in;;3",
+        "id": "newtours-register;newtours-register;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 47198,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewToursRegisterStepsDef.cucumberIterator()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3011316860,
+              "duration": 13721960642,
               "status": "passed"
             },
             "line": 13,
-            "name": "User type User\"alejooo\" and Pass\"adw1w23\"",
+            "name": "User fill the form info 1",
             "match": {
               "arguments": [
                 {
-                  "val": "alejooo",
-                  "offset": 15
-                },
-                {
-                  "val": "adw1w23",
-                  "offset": 33
+                  "val": "1",
+                  "offset": 24
                 }
               ],
-              "location": "NewToursLoginStepsDef.userTypeUserAndPass(String,String)"
+              "location": "NewToursRegisterStepsDef.userFillTheFormInfo(int,RegisterData\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "nombre",
+                  "apellido",
+                  "phone",
+                  "email",
+                  "address1",
+                  "address2",
+                  "city",
+                  "state",
+                  "postal_cod",
+                  "country",
+                  "userName",
+                  "pass",
+                  "conf_pass"
+                ]
+              },
+              {
+                "cells": [
+                  "data1",
+                  "data2",
+                  "123123",
+                  "example@test.com",
+                  "Sabaneta",
+                  "Shopos",
+                  "Medellin",
+                  "Antioquia",
+                  "10001",
+                  "42",
+                  "vash2265",
+                  "1234",
+                  "1234"
+                ]
+              },
+              {
+                "cells": [
+                  "data3",
+                  "data4",
+                  "123213",
+                  "badexample@test.com",
+                  "nothing land",
+                  "ningun lugar",
+                  "cualquiera",
+                  "Valle",
+                  "6093",
+                  "43",
+                  "alejo2265",
+                  "fjdb",
+                  "234"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3148396149,
+              "duration": 50773261824,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User click log-in button",
+            "line": 17,
+            "name": "User sumbit on register button",
             "match": {
-              "location": "NewToursLoginStepsDef.userClickLogInButton()"
+              "location": "NewToursRegisterStepsDef.userSumbitOnRegisterButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Missing Button - Expected button\nExpected: is \u003ctrue\u003e\n     but: was \u003cfalse\u003e\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:244)\r\n\tat com.newtours.stepsdefinition.NewToursLoginStepsDef.userSuccessfulLogin(NewToursLoginStepsDef.java:62)\r\n\tat ✽.User successful login(src/test/resources/features/newTours_login.feature:15)\r\n",
-              "duration": 3063538584,
-              "status": "failed"
+              "duration": 1066100849,
+              "status": "passed"
             },
-            "line": 15,
-            "name": "User successful login",
+            "line": 18,
+            "name": "User successful registered",
             "match": {
-              "location": "NewToursLoginStepsDef.userSuccessfulLogin()"
+              "location": "NewToursRegisterStepsDef.userSuccessfulRegistered()"
             },
             "keyword": "Then "
           }
@@ -191,16 +328,16 @@
             "name": "@NewTours"
           },
           {
-            "name": "@Login"
+            "name": "@Register"
           }
         ]
       }
     ],
-    "name": "NewTours Login",
-    "description": "  As a traveler user\n  I want to use NewTours Page\n  to succesfull autentication in home page",
-    "id": "newtours-login",
+    "name": "NewTours Register",
+    "description": "  As a traveler user\n  I want register in New Tours\n  to succsesfull log-in in to the page",
+    "id": "newtours-register",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/newTours_login.feature",
+    "uri": "src/test/resources/features/newTours_register.feature",
     "tags": [
       {
         "name": "@NewTours",
